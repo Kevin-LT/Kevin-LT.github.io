@@ -11,6 +11,7 @@
             text-align: center;
         }
     </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +22,7 @@
 <body>
     <h1>This is my Github pages site!</h1>
 
-    <form>
+    <form action="/app.js">
         <p>Verify that you <b>are</b> a robot by solving the following equation:</p>
         <p>64<sup>6</sup> =
             <input type="text" id="input">
@@ -29,19 +30,7 @@
         </p>
     </form>
 
-    <script>
-        function evaluateInput() {
-            let input = document.getElementById("input").value;
-            let solution = 64 ** 6;
-
-            if (input == solution) {
-                alert("Success");
-            }
-            else {
-                alert("Fail");
-            }
-        }
-    </script>
+    <script src="app.js"></script>
 
 </body>
 
