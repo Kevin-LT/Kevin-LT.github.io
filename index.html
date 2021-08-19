@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <style>
+        p {
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
     <title>Document</title>
 </head>
+
 <body>
     <h1>This is my Github pages site!</h1>
+
+    <form>
+        <p>Verify that you <b>are</b> a robot by solving the following equation:</p>
+        <p>64<sup>6</sup> =
+            <input type="text" id="input">
+            <input type="button" value="Submit" onClick="evaluateInput()">
+        </p>
+    </form>
+
+    <script>
+        function evaluateInput() {
+            let input = document.getElementById("input").value;
+            let solution = 64 ** 6;
+
+            if (input == solution) {
+                alert("Success");
+            }
+            else {
+                alert("Fail");
+            }
+        }
+    </script>
+
 </body>
+
 </html>
