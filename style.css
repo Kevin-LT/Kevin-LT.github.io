@@ -1,13 +1,28 @@
 body  {
-    background-color: #282c34
+    height: 100vh;
+    background: linear-gradient(#282c34, #3d4657);
+    overflow: hidden;
+    text-align: center;
+    color: rgb(243, 241, 241); 
 }
 
-p {
-    text-align: center;
-    color: white; 
+.custom-shape-divider-bottom-1630080525 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
 }
 
-h1 {
-    text-align: center;
-    color: white; 
+.custom-shape-divider-bottom-1630080525 svg {
+    position: relative;
+    display: block;
+    width: calc(133% + 1.3px);
+    height: 126px;
+}
+
+.custom-shape-divider-bottom-1630080525 .shape-fill {
+    fill: #F04F4F;
 }
